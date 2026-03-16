@@ -1,6 +1,8 @@
-﻿using System;
+﻿using ConsoleForm;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
+
 
 namespace FormsApp
 {
@@ -28,8 +30,11 @@ namespace FormsApp
                 Height = 600;
                 Width = 800;
                 Color _frontColor = Color.AliceBlue;
+                var newvar = new Class1();
+                newvar.Name = "ytre";
 
-              
+
+
                 Button exitButton = CreateButton(new Size(60, 30), new Point(700, 500), "Выход");
                 exitButton.Click += (object sender, EventArgs e) => Application.Exit();
 
@@ -116,5 +121,6 @@ namespace FormsApp
                 return checkBox;
             }
         }
+       
     }
 }
